@@ -1,0 +1,2253 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.heartfailure.org/ay/ontologies/2019/4/CHF"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.heartfailure.org/ay/ontologies/2019/4/CHF">
+    <Prefix name="" IRI="http://www.heartfailure.org/ay/ontologies/2019/4/CHF#"/>
+    <Prefix name="chf" IRI="http://www.heartfailure.org/ay/ontologies/2019/4/CHF#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#SymptomsSigns"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smoking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tachypnoea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasrMSSD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParoxysmalNocturnalDyspnoea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tachycardia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSDNN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wheezing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSSD1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeDomain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HepatojugularReflux"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCVRR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNN50"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cachexia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ascites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDiagnosed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Syncope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alcoholic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubjectID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSigns"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVLF"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSDANN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AgeRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMonitored"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smoker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IrregularPulse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeightGain"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLF/HF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CardiacMurmur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnkleSwelling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PeripheralOedema"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AlcoholRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Galloprhythm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Orthopnoea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prognosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Depression"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSSD2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSD2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeightLoss"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAlcoholic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SmokingRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSubjectID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hepatomegaly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bloated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NocturnalCough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeartDiseases"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CongestiveHeartFailure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGiven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alcoholic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasScalingSlope"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDFAalpha2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#setRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Signs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSmoker"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haspNN50"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diseases"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasApEn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PulmonaryCrepitation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PleuralEffusion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NonDiabetic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSD1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palpitation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diabetic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSDNNindex"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptoms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tiredness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSampEn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonLinear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDFAalpha1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DisplacedApicalImpulse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nonAlcoholic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReducedExerciseTolerance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HRV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrequencyDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diabetic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPredicted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDiabetic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nonSmoker"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HRVRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptoms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Confusion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LossofAppetite"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElevatedJugularVenousPressure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DiabeticRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Breathlessness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patients"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasULF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fatigue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLFHF"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMeanNN"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Age"/>
+        <Class IRI="#Patients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alcoholic"/>
+        <Class IRI="#Patients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diabetic"/>
+        <Class IRI="#Patients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrequencyDomain"/>
+        <Class IRI="#HRV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeartDiseases"/>
+        <Class IRI="#Diseases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonLinear"/>
+        <Class IRI="#HRV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Signs"/>
+        <Class IRI="#SymptomsSigns"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smoking"/>
+        <Class IRI="#Patients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubjectID"/>
+        <Class IRI="#Patients"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symptoms"/>
+        <Class IRI="#SymptomsSigns"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeDomain"/>
+        <Class IRI="#HRV"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Alcoholic"/>
+        <NamedIndividual IRI="#Alcoholic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patients"/>
+        <NamedIndividual IRI="#Alcoholic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#AnkleSwelling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#AnkleSwelling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#Ascites"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Ascites"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Bloated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Bloated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Breathlessness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Breathlessness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#Cachexia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Cachexia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#CardiacMurmur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#CardiacMurmur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Confusion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Confusion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diseases"/>
+        <NamedIndividual IRI="#CongestiveHeartFailure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeartDiseases"/>
+        <NamedIndividual IRI="#CongestiveHeartFailure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Depression"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Depression"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diabetic"/>
+        <NamedIndividual IRI="#Diabetic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patients"/>
+        <NamedIndividual IRI="#Diabetic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#DisplacedApicalImpulse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#DisplacedApicalImpulse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#ElevatedJugularVenousPressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#ElevatedJugularVenousPressure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#Galloprhythm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Galloprhythm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#HepatojugularReflux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#HepatojugularReflux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#Hepatomegaly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Hepatomegaly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#IrregularPulse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#IrregularPulse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#LossofAppetite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#LossofAppetite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#NocturnalCough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#NocturnalCough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Diabetic"/>
+        <NamedIndividual IRI="#NonDiabetic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patients"/>
+        <NamedIndividual IRI="#NonDiabetic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Orthopnoea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Orthopnoea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Palpitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Palpitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#ParoxysmalNocturnalDyspnoea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#ParoxysmalNocturnalDyspnoea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#PeripheralOedema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#PeripheralOedema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#PleuralEffusion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#PleuralEffusion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#PulmonaryCrepitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#PulmonaryCrepitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#ReducedExerciseTolerance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#ReducedExerciseTolerance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patients"/>
+        <NamedIndividual IRI="#Smoker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smoking"/>
+        <NamedIndividual IRI="#Smoker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Syncope"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Syncope"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#Tachycardia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Tachycardia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signs"/>
+        <NamedIndividual IRI="#Tachypnoea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Tachypnoea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Tiredness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Tiredness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#WeightGain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#WeightGain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#WeightLoss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#WeightLoss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptoms"/>
+        <NamedIndividual IRI="#Wheezing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SymptomsSigns"/>
+        <NamedIndividual IRI="#Wheezing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alcoholic"/>
+        <NamedIndividual IRI="#nonAlcoholic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patients"/>
+        <NamedIndividual IRI="#nonAlcoholic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Patients"/>
+        <NamedIndividual IRI="#nonSmoker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smoking"/>
+        <NamedIndividual IRI="#nonSmoker"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDiabetic"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAlcoholic"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSmoker"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDiabetic"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSigns"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptoms"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAlcoholic"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDiagnosed"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGiven"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMonitored"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPredicted"/>
+        <Class IRI="#Diseases"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSmoker"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDiabetic"/>
+        <Class IRI="#Diabetic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDiabetic"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSigns"/>
+        <Class IRI="#Signs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSigns"/>
+        <Class IRI="#SymptomsSigns"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptoms"/>
+        <Class IRI="#Symptoms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptoms"/>
+        <Class IRI="#SymptomsSigns"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAlcoholic"/>
+        <Class IRI="#Alcoholic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAlcoholic"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDiagnosed"/>
+        <Class IRI="#Diseases"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGiven"/>
+        <Class IRI="#Treatment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMonitored"/>
+        <Class IRI="#HRV"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPredicted"/>
+        <Class IRI="#Prognosis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSmoker"/>
+        <Class IRI="#Patients"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSmoker"/>
+        <Class IRI="#Smoking"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AlcoholRiskScore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DiabeticRiskScore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HRVRiskScore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SmokingRiskScore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasApEn"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCVRR"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDFAalpha1"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDFAalpha2"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasHF"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLF"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasMeanNN"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNN50"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSD1"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSD2"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSDANN"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSDNN"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSDNNindex"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSSD1"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSSD2"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSampEn"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasScalingSlope"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSubjectID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasULF"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasVLF"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#haspNN50"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasrMSSD"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLF/HF"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AgeRiskScore"/>
+        <Class IRI="#HeartDiseases"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AlcoholRiskScore"/>
+        <Class IRI="#HeartDiseases"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DiabeticRiskScore"/>
+        <Class IRI="#HeartDiseases"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#HRVRiskScore"/>
+        <Class IRI="#HeartDiseases"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SmokingRiskScore"/>
+        <Class IRI="#HeartDiseases"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Patients"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasApEn"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasApEn"/>
+        <Class IRI="#NonLinear"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCVRR"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCVRR"/>
+        <Class IRI="#TimeDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDFAalpha1"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDFAalpha1"/>
+        <Class IRI="#NonLinear"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDFAalpha2"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDFAalpha2"/>
+        <Class IRI="#NonLinear"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHF"/>
+        <Class IRI="#FrequencyDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHF"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLF"/>
+        <Class IRI="#FrequencyDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLF"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLFHF"/>
+        <Class IRI="#FrequencyDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLFHF"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMeanNN"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMeanNN"/>
+        <Class IRI="#TimeDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNN50"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNN50"/>
+        <Class IRI="#TimeDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSD1"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSD1"/>
+        <Class IRI="#NonLinear"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSD2"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSD2"/>
+        <Class IRI="#NonLinear"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSDANN"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSDANN"/>
+        <Class IRI="#TimeDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSDNN"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSDNN"/>
+        <Class IRI="#TimeDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSDNNindex"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSDNNindex"/>
+        <Class IRI="#TimeDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSSD1"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSSD1"/>
+        <Class IRI="#NonLinear"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSSD2"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSSD2"/>
+        <Class IRI="#NonLinear"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSampEn"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSampEn"/>
+        <Class IRI="#NonLinear"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasScalingSlope"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasScalingSlope"/>
+        <Class IRI="#NonLinear"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSubjectID"/>
+        <Class IRI="#Patients"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasULF"/>
+        <Class IRI="#FrequencyDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasULF"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVLF"/>
+        <Class IRI="#FrequencyDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVLF"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haspNN50"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haspNN50"/>
+        <Class IRI="#TimeDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasrMSSD"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasrMSSD"/>
+        <Class IRI="#TimeDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#setRiskScore"/>
+        <Class IRI="#Diseases"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#setRiskScore"/>
+        <Class IRI="#HeartDiseases"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLF/HF"/>
+        <Class IRI="#FrequencyDomain"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLF/HF"/>
+        <Class IRI="#HRV"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AgeRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AlcoholRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DiabeticRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#HRVRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SmokingRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasApEn"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCVRR"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDFAalpha1"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHF"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLF"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLFHF"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMeanNN"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNN50"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSD1"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSD2"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSDANN"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSDNN"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSDNNindex"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSSD1"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSSD2"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSampEn"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasScalingSlope"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSubjectID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasULF"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVLF"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haspNN50"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasrMSSD"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#setRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLF/HF"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">hasDiabetic</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R012</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDiabetic"/>
+                <Variable IRI="#p"/>
+                <NamedIndividual IRI="#Diabetic"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#DiabeticRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NonDiabetic</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R013</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasDiabetic"/>
+                <Variable IRI="#p"/>
+                <NamedIndividual IRI="#NonDiabetic"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#DiabeticRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isAlcoholic</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R010</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isAlcoholic"/>
+                <Variable IRI="#p"/>
+                <NamedIndividual IRI="#Alcoholic"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AlcoholRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">nonAlcoholic</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R011</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isAlcoholic"/>
+                <Variable IRI="#p"/>
+                <NamedIndividual IRI="#nonAlcoholic"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AlcoholRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">isSmoker</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R008</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSmoker"/>
+                <Variable IRI="#p"/>
+                <NamedIndividual IRI="#Smoker"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#SmokingRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">nonSmoker</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R009</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSmoker"/>
+                <Variable IRI="#p"/>
+                <NamedIndividual IRI="#nonSmoker"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#SmokingRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Age 55 ~ 59</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R002</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AgeRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Age 60 ~ 64</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R003</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AgeRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Age 65 ~ 69</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R004</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AgeRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Age 70 ~ 74</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R005</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">75</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AgeRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">6</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Age 75 ~ 79</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R006</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">75</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AgeRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Age &gt;= 80</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R007</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AgeRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Age &lt; 55</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R001</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAge"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+                <Variable IRI="#age"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#AgeRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DFA alpha 1</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R027</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDFAalpha1"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#DFAalpha1"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.39</Literal>
+                <Variable IRI="#DFAalpha1"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.29</Literal>
+                <Variable IRI="#DFAalpha1"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DFA alpha 2</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R028</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasDFAalpha2"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#DFAalpha2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.92</Literal>
+                <Variable IRI="#DFAalpha2"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.38</Literal>
+                <Variable IRI="#DFAalpha2"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">HF</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R021</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasHF"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#HF"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.61</Literal>
+                <Variable IRI="#HF"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.26</Literal>
+                <Variable IRI="#HF"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LF</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R020</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasLF"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#LF"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.5</Literal>
+                <Variable IRI="#LF"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.77</Literal>
+                <Variable IRI="#LF"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">meanNN</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R014</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasMeanNN"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#meanNN"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">733</Literal>
+                <Variable IRI="#meanNN"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SD1</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R025</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSD1"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#SD1"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.6</Literal>
+                <Variable IRI="#SD1"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20.6</Literal>
+                <Variable IRI="#SD1"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SD2</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R026</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSD2"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#SD2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.6</Literal>
+                <Variable IRI="#SD2"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20.6</Literal>
+                <Variable IRI="#SD2"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SDANN</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R017</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSDANN"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#SDANN"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">92.75</Literal>
+                <Variable IRI="#SDANN"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SDNN</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R015</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSDNN"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#SDNN"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">55.21</Literal>
+                <Variable IRI="#SDNN"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SDNNindex</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R016</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSDNNindex"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#SDNNindex"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">27</Literal>
+                <Variable IRI="#SDNNindex"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">61</Literal>
+                <Variable IRI="#SDNNindex"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ULF</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R024</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasULF"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#ULF"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1974.5</Literal>
+                <Variable IRI="#ULF"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">VLF</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R023</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasVLF"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#VLF"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1197</Literal>
+                <Variable IRI="#VLF"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">pNN50</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R019</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#haspNN50"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#pNN50"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.4</Literal>
+                <Variable IRI="#pNN50"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.53</Literal>
+                <Variable IRI="#pNN50"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rMSSD</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R018</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasrMSSD"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#rMSSD"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9.9</Literal>
+                <Variable IRI="#rMSSD"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">33.2</Literal>
+                <Variable IRI="#rMSSD"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">LF/HF</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">R022</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Patients"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasLF/HF"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#LFHF"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.22</Literal>
+                <Variable IRI="#LFHF"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.87</Literal>
+                <Variable IRI="#LFHF"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#HRVRiskScore"/>
+                <NamedIndividual IRI="#CongestiveHeartFailure"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

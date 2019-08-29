@@ -1,0 +1,2417 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ay/ontologies/2019/0/HF#"
+     xml:base="http://www.semanticweb.org/ay/ontologies/2019/0/HF"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasSymptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasSymptoms">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#isDiagnosed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isDiagnosed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Diseases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#isGiven -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isGiven">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#isMonitoredby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isMonitoredby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#isPredicted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isPredicted">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Diseases"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Prognosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#AlcoholStatusScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#AlcoholStatusScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#CVRR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#CVRR">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#DFA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#DFA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#HF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HF">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Frequency_Domain_Analysis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#LF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#LF">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Frequency_Domain_Analysis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#NN50 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#NN50">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SD1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SD1">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SD2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SD2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SDANN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SDANN">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SDNN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SDNN">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SDNN_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SDNN_index">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SSD1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SSD1">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SSD2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SSD2">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SampEn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SampEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#ScalingSlope -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ScalingSlope">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SmokingStatusScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SmokingStatusScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#SubjectID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SubjectID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#ULF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ULF">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Frequency_Domain_Analysis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#VLF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#VLF">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Frequency_Domain_Analysis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAgeScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAgeScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAnkleSwelling -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAnkleSwelling">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAscites -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAscites">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasBloated -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasBloated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasBreathlessness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasBreathlessness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasCHFScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasCHFScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasCachexia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasCachexia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasCardiacMurmur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasCardiacMurmur">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasConfussion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasConfussion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasDepression -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasDepression">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasDiabetic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasDiabetic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasDisplacedApicalImpulse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasDisplacedApicalImpulse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasElevatedJugularVenousPressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasElevatedJugularVenousPressure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasFatigue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasFatigue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasGallopRhythm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasGallopRhythm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasHepatoJugularReflux -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasHepatoJugularReflux">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasHepatomegaly -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasHepatomegaly">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasIrregularPulse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasIrregularPulse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasLossofAppetite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasLossofAppetite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasNocturnalCough -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasNocturnalCough">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasOrthopnoea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasOrthopnoea">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasPalpitation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasPalpitation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasParoxysmalNocturnalDyspnoea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasParoxysmalNocturnalDyspnoea">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasPeripheralOedema -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasPeripheralOedema">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasPleuralEffusion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasPleuralEffusion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasPulmonaryCrepitation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasPulmonaryCrepitation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasReducedEExerciseTolerance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasReducedEExerciseTolerance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasSyncope -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasSyncope">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasTachycardia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasTachycardia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasTachypnoea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasTachypnoea">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasTiredness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasTiredness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasWeightGain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasWeightGain">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasWeightLoss -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasWeightLoss">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasWheezing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasWheezing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#isConsumingAlcohol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isConsumingAlcohol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#isSmoking -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isSmoking">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#meanNN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#meanNN">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#pNN50 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#pNN50">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#rMSSD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#rMSSD">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#LF/HF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#LF/HF">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Frequency_Domain_Analysis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Congestive_Heart_Failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Congestive_Heart_Failure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Diseases"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Heart_Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Diseases"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Frequency_Domain_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Frequency_Domain_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Heart_Diseases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Heart_Diseases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Interval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Prognosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Prognosis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Segment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Segment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Treatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ay/ontologies/2019/0/HF#Waves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Waves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Diseases"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Prognosis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Treatment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Diseases"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#ECG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Symptoms_and_Signs"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Frequency_Domain_Analysis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Non_Linear_Analysis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Time_Domain_Analysis"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#HRV"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Interval"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Segment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Waves"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule10</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isSmoking"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SmokingStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule9</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isSmoking"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SmokingStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule8</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isSmoking"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SmokingStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule12</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isSmoking"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SmokingStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAgeScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAgeScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAgeScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAgeScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule16</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isConsumingAlcohol"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#AlcoholStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAgeScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAgeScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAgeScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule15</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isConsumingAlcohol"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#AlcoholStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule13</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isConsumingAlcohol"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#AlcoholStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule14</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isConsumingAlcohol"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#AlcoholStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule17</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isConsumingAlcohol"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#AlcoholStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule11</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#Patients"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                <rdf:rest rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                                        <rdf:rest rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ay/ontologies/2019/0/HF#age"/>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#isSmoking"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#SmokingStatusScore"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ay/ontologies/2019/0/HF#p"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,2756 @@
+<?xml version="1.0"?>
+<rdf-RDF xmlns="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#"
+     xml-base="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF"
+     xmlns-chf="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#"
+     xmlns-rdf="http-//www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns-owl="http-//www.w3.org/2002/07/owl#"
+     xmlns-xml="http-//www.w3.org/XML/1998/namespace"
+     xmlns-swrlb="http-//www.w3.org/2003/11/swrlb#"
+     xmlns-swrl="http-//www.w3.org/2003/11/swrl#"
+     xmlns-xsd="http-//www.w3.org/2001/XMLSchema#"
+     xmlns-rdfs="http-//www.w3.org/2000/01/rdf-schema#"
+     xmlns-swrla="http-//swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl-Ontology rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http-//swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl-AnnotationProperty rdf-about="http-//swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory">
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasDiabetic -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasDiabetic">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diabetic"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasHF -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasHF">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HF"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasLF -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasLF">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LF"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasLFHF -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasLFHF">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHF"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSD1 -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSD1">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSD2 -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSD2">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD2"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDANN -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDANN">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANN"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDNN -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDNN">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNN"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDNNindex -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDNNindex">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNindex"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSigns -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSigns">
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSymptoms -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSymptoms">
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasULF -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasULF">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ULF"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasVLF -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasVLF">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#VLF"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasalpha1 -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasalpha1">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DFAalpha1"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasalpha2 -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasalpha2">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DFAalpha2"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasmeanNN -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasmeanNN">
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNN"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#haspNN50 -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#haspNN50">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasrMSSD -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasrMSSD">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSD"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isAlcoholic -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isAlcoholic">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Alcoholic"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isDiagnosed -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isDiagnosed">
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diseases"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isGiven -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isGiven">
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Treatment"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isMonitored -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isMonitored">
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HRV"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isPredicted -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isPredicted">
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diseases"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Prognosis"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isSmoker -->
+
+    <owl-ObjectProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isSmoker">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+        <rdfs-range rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Smoking"/>
+    </owl-ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#addRisk -->
+
+    <owl-DatatypeProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#addRisk">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HeartDiseases"/>
+        <rdfs-range rdf-resource="http-//www.w3.org/2001/XMLSchema#float"/>
+    </owl-DatatypeProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk -->
+
+    <owl-DatatypeProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HeartDiseases"/>
+        <rdfs-range rdf-resource="http-//www.w3.org/2001/XMLSchema#float"/>
+    </owl-DatatypeProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#reduceRisk -->
+
+    <owl-DatatypeProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#reduceRisk">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HeartDiseases"/>
+        <rdfs-range rdf-resource="http-//www.w3.org/2001/XMLSchema#float"/>
+    </owl-DatatypeProperty>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk -->
+
+    <owl-DatatypeProperty rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk">
+        <rdfs-subPropertyOf rdf-resource="http-//www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs-domain rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HeartDiseases"/>
+        <rdfs-range rdf-resource="http-//www.w3.org/2001/XMLSchema#float"/>
+    </owl-DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Alcoholic -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Alcoholic">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#AnkleSwelling -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#AnkleSwelling">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Ascites -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Ascites">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Bloated -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Bloated">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Breathlessness -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Breathlessness">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Cachexia -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Cachexia">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CardiacMurmur -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CardiacMurmur">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Confusion -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Confusion">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DFAalpha1 -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DFAalpha1">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NonLinear"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DFAalpha2 -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DFAalpha2">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NonLinear"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Depression -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Depression">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diabetic -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diabetic">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diseases -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diseases"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DisplacedApicalImpulse -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DisplacedApicalImpulse">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Fatigue -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Fatigue">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#FrequencyDomain -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#FrequencyDomain">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HRV"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Galloprhythm -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Galloprhythm">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HF -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HF">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#FrequencyDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HRV -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HRV"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HeartDiseases -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HeartDiseases">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diseases"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HepatojugularReflux -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HepatojugularReflux">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Hepatomegaly -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Hepatomegaly">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#IrregularPulse -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#IrregularPulse">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LF -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LF">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#FrequencyDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHF -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHF">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#FrequencyDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LossofAppetite -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LossofAppetite">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NocturnalCough -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NocturnalCough">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NonLinear -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NonLinear">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HRV"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Orthopnoea -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Orthopnoea">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Palpitation -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Palpitation">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ParoxysmalNocturnalDyspnoea -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ParoxysmalNocturnalDyspnoea">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#PeripheralOedema -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#PeripheralOedema">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#PleuralEffusion -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#PleuralEffusion">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Prognosis -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Prognosis"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#PulmonaryCrepitation -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#PulmonaryCrepitation">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ReducedExerciseTolerance -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ReducedExerciseTolerance">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1 -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NonLinear"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD2 -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD2">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NonLinear"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANN -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANN">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#TimeDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNN -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNN">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#TimeDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNindex -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNindex">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#TimeDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SymptomsSigns"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Smoking -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Smoking">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SubjectID -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SubjectID">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SymptomsSigns"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SymptomsSigns -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SymptomsSigns"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Syncope -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Syncope">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Tachycardia -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Tachycardia">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Tachypnoea -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Tachypnoea">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Signs"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#TimeDomain -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#TimeDomain">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HRV"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Tiredness -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Tiredness">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Treatment -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Treatment"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ULF -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ULF">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#FrequencyDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#VLF -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#VLF">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#FrequencyDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#WeightGain -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#WeightGain">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#WeightLoss -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#WeightLoss">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Wheezing -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Wheezing">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Symptoms"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNN -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNN">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#TimeDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50 -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#TimeDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSD -->
+
+    <owl-Class rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSD">
+        <rdfs-subClassOf rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#TimeDomain"/>
+    </owl-Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Alcoholic -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Alcoholic">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Alcoholic"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HeartDiseases"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diabetic -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diabetic">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diabetic"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#GT80 -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#GT80">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HFn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HFn">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HF"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HFp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HFp">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HF"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHFn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHFn">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHF"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHFp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHFp">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHF"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFn">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LF"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFp">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LF"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LT55 -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LT55">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NonDiabetic -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NonDiabetic">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diabetic"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1n -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1n">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1p -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1p">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD2n -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD2n"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD2p -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD2p"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANNn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANNn">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANN"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANNp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANNp">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANN"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNindexn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNindexn"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNindexp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNindexp"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNn">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNN"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNp">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNN"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Smoker -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Smoker">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Smoking"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ULFn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ULFn"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ULFp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#ULFp"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#VLFn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#VLFn"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#VLFp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#VLFp"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age55to60 -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age55to60">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age60to65 -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age60to65">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age65to70 -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age65to70">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age70to75 -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age70to75">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age75to80 -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age75to80">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Age"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha1n -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha1n">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DFAalpha1"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha1p -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha1p">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#DFAalpha1"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha2n -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha2n"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha2p -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha2p"/>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNNn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNNn">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNN"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNNp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNNp">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNN"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#nonAlcoholic -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#nonAlcoholic">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Alcoholic"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#nonSmoker -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#nonSmoker">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Smoking"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50n -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50n">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50p -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50p">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSDn -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSDn">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSD"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSDp -->
+
+    <owl-NamedIndividual rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSDp">
+        <rdf-type rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSD"/>
+    </owl-NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf-Description rdf-about="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p">
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Variable"/>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R007</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#GT80"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">5.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R030</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasLFHF"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHFp"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R037</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSD1"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1n"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R036</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSD1"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SD1p"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R021</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDANN"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANNn"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R020</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDANN"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDANNp"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R017</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDNN"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNn"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R016</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasSDNN"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#SDNNp"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R002</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age55to60"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.4</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R041</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasalpha1"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha1n"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R040</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasalpha1"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alpha1p"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R015</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasmeanNN"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNNn"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R014</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasmeanNN"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#meanNNp"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R025</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#haspNN50"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50n"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R024</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#haspNN50"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#pNN50p"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R023</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasrMSSD"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSDn"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R022</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasrMSSD"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#rMSSDp"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R010</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isAlcoholic"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Alcoholic"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.4</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R011</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isAlcoholic"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#nonAlcoholic"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R002</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age60to65"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.4</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R008</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isSmoker"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Smoker"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.4</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R009</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#isSmoker"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#nonSmoker"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R003</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age60to65"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.8</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R004</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age65to70"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">2.6</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R005</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age70to75"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">3.4</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R006</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#age75to80"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">4.2</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R012</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasDiabetic"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Diabetic"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">2.2</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R013</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasDiabetic"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#NonDiabetic"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R029</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasHF"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HFn"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R028</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasHF"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#HFp"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R001</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasAgeCategory"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LT55"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#setRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R027</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasLF"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFn"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R026</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasLF"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFp"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.1</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+    <rdf-Description>
+        <swrla-isRuleEnabled rdf-datatype="http-//www.w3.org/2001/XMLSchema#boolean">true</swrla-isRuleEnabled>
+        <rdfs-comment rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">Priority- 1</rdfs-comment>
+        <rdfs-label rdf-datatype="http-//www.w3.org/2001/XMLSchema#string">R031</rdfs-label>
+        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#Imp"/>
+        <swrl-body>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl-classPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#Patients"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf-first>
+                            <rdf-Description>
+                                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#hasLFHF"/>
+                                <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#p"/>
+                                <swrl-argument2 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#LFHFn"/>
+                            </rdf-Description>
+                        </rdf-first>
+                        <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf-Description>
+                </rdf-rest>
+            </rdf-Description>
+        </swrl-body>
+        <swrl-head>
+            <rdf-Description>
+                <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf-first>
+                    <rdf-Description>
+                        <rdf-type rdf-resource="http-//www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl-propertyPredicate rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#alterRisk"/>
+                        <swrl-argument1 rdf-resource="http-//www.heartfailure.org/ay/ontologies/2019/4/CHF#CongestiveHeartFailure"/>
+                        <swrl-argument2 rdf-datatype="http-//www.w3.org/2001/XMLSchema#float">1.0</swrl-argument2>
+                    </rdf-Description>
+                </rdf-first>
+                <rdf-rest rdf-resource="http-//www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf-Description>
+        </swrl-head>
+    </rdf-Description>
+</rdf-RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https-//github.com/owlcs/owlapi -->
+

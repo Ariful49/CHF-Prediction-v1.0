@@ -1,0 +1,20 @@
+norsys.netica.NeticaException: 
+**************  E R R O R  ***************
+** ErrorNumber   = 2427
+** ErrorSeverity = ERROR_ERR
+** ErrorCategory = 
+** ErrorMessage  = In function Net.write: this version of Netica has not been enabled to save nets having more than 15 nodes (and net 'CongestiveHeartFailure' has 20).
+******************************************
+
+	at norsys.netica.Environ.testForError(Environ.java:219)
+
+Finish writing 1835008 lines of CPT
+Contain 1835008 lines of possible combinations and 0 impossible combinations
+That took 1697630 milliseconds
+Network and CPT have been created!!
+
+Finish writing 57344 lines of CPT
+Contain 57344 lines of possible combinations and 0 impossible combinations
+That took 45371 milliseconds
+Network and CPT have been created!!
+BUILD SUCCESSFUL (total time: 45 seconds)
